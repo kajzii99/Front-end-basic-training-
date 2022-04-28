@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr1, td, table{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <table id="tabela1">
+        <tr id="tr1">  <!--TABLE ROW - WIERSZE-->
+            <td> Wiersz 1 Kol 1</td>  <!--TABLE DATA CELL - KOMÓRKA-->
+            <td> Wiersz 1 Kol 2</td>>  <!--TABLE DATA CELL - KOMÓRKA-->
+            <td> Wiersz 1 Kol 3</td>  <!--TABLE DATA CELL - KOMÓRKA-->
+            <td rowspan="2">Wiersz 1 & 2 kol 4 </td>  <!--ŁĄCZY DWA WIERSZE W 1 -->
+        </tr>
+
+        <tr> <!--TABLE ROW - WIERSZ 2-->
+            <td colspan="2" align="center">Wiersz 2 kol 1 & 2</td>>
+            <td>Wiersz 2 kol 3</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <caption> Cennik mięsa </caption>
+        <br>
+        <colgroup>
+            <col span="1" style="background-color: aqua;">
+            <!-- KOLOR KOLUMNY -->
+            <col span="2" style="background-color: green;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Cena mięso za 1kg &nbsp; &nbsp;  </th>
+                <th>Sklep 1</th>
+                <th>Sklep 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mięso wieprzowe</td>
+                <td>39,99 zł/kg</td>
+                <td>42,99 zł/kg</td>
+            </tr>
+            <tr>
+                <td>Mięso drobiowe</td>
+                <td>19,99 zł/kg</td>
+                <td>23,99 zł/kg</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Na wagę:</td>
+                <td>nie</td>
+                <td>tak</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
